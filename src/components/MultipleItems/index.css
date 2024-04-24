@@ -1,0 +1,35 @@
+h3{
+    color:black;
+    font-size: 15px;
+}
+
+.slick-prev,
+.slick-next {
+  color: black; /* Set arrow color to black */
+}
+
+
+.slider-container {
+    width:65vw;
+    height:auto; /* Adjust width as needed */
+  }
+
+  
+  
+
+  
+  
+  
+  .slider-container.shift {
+    margin-left: 60px; /* Adjust left margin to accommodate the sidebar */
+  }
+  
+  /* Responsive styling */
+  @media screen and (max-width: 768px) {
+    .slider-container {
+      width: 100%;
+    }
+  }
+  
+  /* Add other responsive styles as needed */
+  

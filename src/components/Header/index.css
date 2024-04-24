@@ -1,0 +1,102 @@
+/* Header */
+.sidebar-header {
+    background-color: #1a237e; /* Dark blue background */
+    color: #fff; /* White text */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fixed position */
+    top: 0; /* Align to the top */
+    left: 250px; /* Align to the right edge of the expanded sidebar */
+    width: calc(100% - 250px); /* Adjusted width to account for expanded sidebar */
+    transition: left 0.3s, width 0.3s; /* Transition for left and width change */
+    z-index: 200;
+    background-size: cover;
+    position: relative;  /* Ensure the header is above the sidebar */
+  }
+  
+  .sidebar-header.shift {
+    left: 60px; /* Adjust left position for collapsed sidebar */
+    width: calc(100% - 60px); /* Adjusted width to account for collapsed sidebar */
+  }
+  
+  .sidebar-header .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 100%; /* Ensure the content takes up the full width */
+  }
+  
+  .sidebar-header .name-description h2 {
+    margin: 0;
+  }
+  
+  .sidebar-header .name-description p {
+    margin: 5px 0;
+  }
+  
+  .sidebar-header .notification-icons span {
+    margin-right: 5px;
+  }
+
+  .header-hanging-container {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -120px; /* Adjust as needed to position the hanging divs */
+    left: 0;
+    width: 100%;
+    margin-left:10px;
+  }
+  
+  .hanging-div {
+    width: 15vw; /* 10% of the viewport width */
+    height: 20vh; /* 10% of the viewport height */
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: -10vh;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:white;
+    padding: 2px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    /* Adjust as needed */
+  }
+
+  h3{
+    color:black;
+    font-size: 18px;
+    font-family: sans-serif;
+  }
+
+  .mass{
+    font-size: 15px;
+    color:black;
+    font-weight: none;
+  }
+
+  
+  /* Media query for responsiveness */
+  
+  @media screen and (max-width: 768px) {
+    .header-content {
+      padding: 10px;
+    }
+  
+    .notification-icons span {
+      margin-right: 5px;
+    }
+  
+    .header-hanging-container {
+      flex-direction: column;
+      align-items: center;
+      bottom: -10px;
+    }
+  
+    .hanging-div {
+      margin-top: -5vh;
+    }
+  }
+  

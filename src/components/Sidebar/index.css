@@ -1,0 +1,79 @@
+/* Sidebar */
+.sidebar {
+    width: 250px; /* Width of the sidebar when expanded */
+    height: 100vh; /* Full height of the viewport */
+    background-color:white; /* Background color of the sidebar */
+    position: fixed; /* Fixed position */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    transition: width 0.3s; /* Transition for width change */
+    z-index: 100;
+    padding: 10px; /* Ensure the sidebar is above other content */
+  }
+  
+  .sidebar.closed {
+    width: 60px; /* Width of the sidebar when collapsed */
+  }
+  
+  .sidebar .toggle-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 0;
+    text-align: left;
+    font-size: 18px;
+  }
+  .mass{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .sidebar .toggle-btn .expand,
+  .sidebar .toggle-btn .collapse {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .colur{
+    background-color: darkblue;
+    border-radius: 40px;
+    padding: 5px;
+  }
+  
+  .sidebar .sidebar-items {
+    padding-top: 50px; 
+    display: flex;
+  flex-direction: column;
+  height: 100%;/* Add padding for toggle button */
+  }
+
+  .mass {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .mass.top {
+    margin-bottom: auto;
+  }
+  
+  .mass.bottom {
+    margin-top: auto;
+  }
+  
+  .sidebar .sidebar-items p {
+    margin: 10px 0;
+    padding: 8px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    
+  }
+  
+  .sidebar .sidebar-items p:hover {
+    background-color: #ddd; /* Background color on hover */
+  }
+  
+ 
+  

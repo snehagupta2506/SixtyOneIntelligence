@@ -1,0 +1,35 @@
+.content-card {
+  width: calc(100% - 20px);
+   /* Three cards per row with margin between them */
+  /*margin: 10px;
+ /* Adjust padding */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  
+ 
+}
+
+
+
+
+.pic {
+  width: 100%; /* Set the width of the image */
+  height: 200px; /* Maintain aspect ratio */
+  border-radius: 8px;
+  object-fit: cover; /* Cover the container with the image */
+}
+
+
+
+h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+p {
+  margin-top: 5px;
+  font-size: 1 rem;
+  color: #666;
+}
+
